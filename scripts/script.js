@@ -1,6 +1,6 @@
 console.log("hello - world");
 
-fetch('http://localhost:3000/users')
+fetch('https://node-test-pr.vercel.app/users')
   .then(res => res.json())
   .then(data => console.log(data));
 
@@ -14,7 +14,7 @@ fetch('http://localhost:3000/users')
 
   if(NameUser != ""){
 
-      fetch('http://localhost:3000/users', {
+      fetch('https://node-test-pr.vercel.app/users', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: NameUser })
