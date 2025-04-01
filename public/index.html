@@ -1,19 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reza App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #444;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0070f3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005bd1;
+    }
+
+    #status {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    table {
+      margin: 2rem auto;
+      border-collapse: collapse;
+      width: 60%;
+      background: white;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-    <h1>
-        Reza
-    </h1>
+  <h1>Reza</h1>
+  <button id="btnn">Click</button>
+  <div id="status"></div>
+  <table id="userTable">
+    <thead>
+      <tr><th>#</th><th>Name</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
-    <button id="btnn">
-        click
-    </button>
-
-<script src="./scripts/script.js"></script>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
